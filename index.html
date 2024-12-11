@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/7a4c34e63c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>EXMES</title>
+  </head>
+  <body class="background-image">
+    <header>
+      <nav id="navigation" class="nav-bar">
+        <a href="#aboutus" class="pad-5">À propos de nous</a>
+        <a href="#parcours" class="border pad-5">Votre parcours</a>
+        <a href="#devis" class="border pad-5">Demande de devis</a>
+        <a href="mailto:contact@exmes.fr" class="border pad-5">Nous contacter</a>
+      </nav>
+      <nav class="nav-mobile">
+        <a href="#aboutus" class="icon-style"><i class="fa-solid fa-house"></i></a>
+        <a href="#parcours" class="icon-style"><i class="fa-solid fa-stethoscope"></i></a>
+        <a href="#devis" class="icon-style"><i class="fa-solid fa-euro-sign"></i></a>
+        <a href="mailto:contact@exmes.fr" class="icon-style">@</a>
+      </nav>
+    </header>
+    <main>
+      <div id="aboutus">
+        <h1>EXMES</h1>
+        <p>
+          Bienvenue chez Exmes, votre cabinet médical de visite d’aptitude
+          ferroviaire ! Situé au coeur de Paris, Nemo enim ipsam voluptatem quia
+          voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+          magni dolores eos qui ratione voluptatem Nemo enim ipsam voluptatem
+          quia voluptas sit aspernat ipsam voluptatem quia voluptas sit
+          aspernatur
+        </p>
+      </div>
+      <div id="parcours" class="parcours-container">
+        <div class="parcours-box">
+          <h3>Accueil</h3>
+          <img src="/images/pycto1.png" alt="pycto-main" class="pycto-img" />
+          <p>
+            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+            quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+            voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+            consequuntur magni dolores eos qui ratione voluptatem Nemo enim
+            ipsam voluptatem quia voluptas sit aspernat ipsam voluptatem quia
+            voluptas sit aspernatur
+          </p>
+        </div>
+        <div class="parcours-box">
+          <h3>Rendez-vous médicaux</h3>
+          <img
+            src="/images/pycto2.png"
+            alt="pycto-stétoscope"
+            class="pycto-img"
+          />
+          <p>
+            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+            quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+            voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+            consequuntur magni dolores eos qui ratione voluptatem Nemo enim
+            ipsam voluptatem quia voluptas sit aspernat ipsam voluptatem quia
+            voluptas sit aspernatur
+          </p>
+        </div>
+        <div class="parcours-box">
+          <h3>Bilan & certificat</h3>
+          <img src="/images/pycto3.png" alt="pycto-dossier" class="pycto-img" />
+          <p>
+            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+            quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+            voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+            consequuntur magni dolores eos qui ratione voluptatem Nemo enim
+            ipsam voluptatem quia voluptas sit aspernat ipsam voluptatem quia
+            voluptas sit aspernatur
+          </p>
+        </div>
+        <div class="parcours-box">
+          <h3>Sécurité</h3>
+          <img
+            src="/images/pycto4.png"
+            alt="pycto-securité"
+            class="pycto-img"
+          />
+          <p>
+            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+            quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+            voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+            consequuntur magni dolores eos qui ratione voluptatem Nemo enim
+            ipsam voluptatem quia voluptas sit aspernat ipsam voluptatem quia
+            voluptas sit aspernatur
+          </p>
+        </div>
+      </div>
+      <div id="devis">
+        <form action="send_email.php" method="POST" class="form-style">
+          <h2>Demande de devis</h2>
+          <div class="line-section">
+              <div class="input-container">
+                  <label for="lastname">Nom</label>
+                  <input type="text" name="lastname" id="lastname" required />
+              </div>
+              <div class="input-container">
+                  <label for="firstname">Prénom</label>
+                  <input type="text" name="firstname" id="firstname" required />
+              </div>
+          </div>
+          <div class="line-section">
+              <div class="input-container">
+                  <label for="phone">Téléphone</label>
+                  <input type="tel" name="phone" id="phone" required />
+              </div>
+              <div class="input-container">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" required />
+              </div>
+          </div>
+          <div class="full-line">
+              <label for="message">Message</label>
+              <textarea name="message" id="message" rows="4" required class="message"></textarea>
+          </div>
+          <div class="motif-container">
+              <h3>Motif</h3>
+              <div class="choice-position">
+                  <div>
+                      <input type="checkbox" name="choice-1" id="choice-1" />
+                      <label for="choice-1"> Visite médicale d’aptitude </label>
+                  </div>
+                  <div>
+                      <input type="checkbox" name="choice-2" id="choice-2" />
+                      <label for="choice-2"> Visite médicale & psycho-technique couplée </label>
+                  </div>
+              </div>
+          </div>
+          <div class="btn-container">
+              <button type="submit" class="btn-submit">Envoyer</button>
+          </div>
+      </form>
+      <div id="contact" >
+        <div class="map-container">
+          <a href="map.osm"></a>
+        </div>
+        <div>
+          <i class="fa-solid fa-phone"></i>
+          <p>07 70 01 25 65</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-map"></i>
+          <p>93 boulevard du Faubourg Saint-Martin,75010 Paris</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-envelope">
+          <p>contact@exmes.fr</p>
+        </div>
+        <div>
+          <i></i>
+          <p>Horaire d'accueil</p>
+          <p> Du lundi au vendredi de 9:00 à 13:00 et de 14:00 à 18:00 </p>
+        </div>
+      </div>
+      </div>
+    </main>
+    <footer>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
